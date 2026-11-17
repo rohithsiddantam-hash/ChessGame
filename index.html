@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header class="topbar">
+<div><p class="eyebrow">C++ Chess Project</p><h1>Chess Game</h1></div>
+<button id="newGameBtn" class="button">New Game</button>
+</header>
+<section class="game-layout">
+<div class="board-panel">
+<div class="player-bar"><span>Black</span><span id="blackStatus">Waiting</span></div>
+<div id="board" class="board" aria-label="Chess board"></div>
+<div class="player-bar"><span>White</span><span id="whiteStatus">Your turn</span></div>
+</div>
+<aside class="side-panel">
+<div class="card"><span class="label">Game status</span><h2 id="status">White to move</h2><p id="message">Select a piece, then select its destination.</p></div>
+<div class="card"><span class="label">Project</span><ul><li>8 × 8 interactive board</li><li>Piece selection and movement</li><li>Turn tracking</li><li>Capture support</li><li>Responsive UI</li></ul></div>
+<div class="card controls"><button id="flipBtn" class="button secondary">Flip Board</button><button id="resetBtn" class="button secondary">Reset Position</button></div>
+</aside>
+</section>
+<footer>Chess Game • Frontend UI for the C++ project</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
